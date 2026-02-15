@@ -12,6 +12,34 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
+
+        td_k_skobki: td_k_skobki {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_K_SKOBKI";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        };
+
+        td_f_skobki: td_f_skobki {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F_SKOBKI";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+
+        td_slash: td_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp NUBS>, <&kp PIPE>, <&kp FSLH>;
+        };
+
+        td_t4k_s_zpt: td_t4k_s_zpt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_T4K_S_ZPT";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp COLON>;
+        };
     };
 
     combos {
@@ -91,11 +119,11 @@
 
         en {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSPC
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSLH
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 2   &kp SPACE    &kp ENTER  &mo 3   &kp RCTRL  &kp RALT   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                &kp N6  &kp N7     &kp N8     &kp N9    &kp N0         &kp BSPC
+&kp ESC    &kp Q   &kp W     &kp F     &kp P      &kp G                                 &kp J   &kp L      &kp U      &kp Y     &td_t4k_s_zpt  &td_slash
+&kp TAB    &kp A   &kp R     &kp S     &kp T      &kp D                                 &kp H   &kp N      &kp E      &kp I     &kp O          &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &td_k_skobki    &td_f_skobki  &kp K   &kp M      &kp COMMA  &kp DOT   &td_slash      &kp RSHFT
+                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 2   &kp SPACE       &kp ENTER     &mo 3   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             display-name = "Base";
