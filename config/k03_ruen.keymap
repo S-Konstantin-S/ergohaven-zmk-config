@@ -98,11 +98,11 @@
 
         en {
             bindings = <
-&mt CAPS ESC      &kp N1  &kp N2    &kp N3    &kp N4          &kp N5                                                                &kp N6  &kp N7     &kp N8                      &kp N9         &kp N0         &kp BSPC
-&kp TAB           &kp Q   &kp W     &none     &kp K           &kp E                                                                 &kp N   &kp G      &none                       &none          &kp Z          &kp H
-&kp LEFT_SHIFT    &kp F   &kp S     &kp V     &kp A           &kp P                                                                 &kp R   &kp O      &kp L                       &kp D          &kp J          &mt MINUS UNDERSCORE
-&kp LEFT_CONTROL  &kp Y   &kp X     &kp C     &kp M           &kp I   &mt LEFT_BRACKET RIGHT_BRACKET    &mt LEFT_BRACE RIGHT_BRACE  &kp T   &none      &kp B                       &kp U          &mt COMMA DOT  &kp RSHFT
-                          &kp LGUI  &kp LALT  &mt SEMI COLON  &mo 2   &kp SPACE                         &kp ENTER                   &mo 3   &td_slash  &mt LESS_THAN GREATER_THAN  &mt GRAVE SQT
+&mt CAPS ESC      &mt N1 EXCLAMATION  &mt N2 AT_SIGN  &mt N3 POUND  &mt N4 DOLLAR   &mt N5 PERCENT                                                                &mt N6 CARET  &mt N7 AMPERSAND  &mt N8 ASTRK                &mt N9 LEFT_PARENTHESIS  &mt N0 RIGHT_PARENTHESIS  &kp BSPC
+&kp TAB           &kp Q               &kp W           &none         &kp K           &kp E                                                                         &kp N         &kp G             &none                       &none                    &kp Z                     &kp H
+&kp LEFT_SHIFT    &kp F               &kp S           &kp V         &kp A           &kp P                                                                         &kp R         &kp O             &kp L                       &kp D                    &kp J                     &mt MINUS UNDERSCORE
+&kp LEFT_CONTROL  &kp Y               &kp X           &kp C         &kp M           &kp I           &mt LEFT_BRACKET RIGHT_BRACKET    &mt LEFT_BRACE RIGHT_BRACE  &kp T         &none             &kp B                       &kp U                    &mt COMMA DOT             &kp RSHFT
+                                      &kp LGUI        &kp LALT      &mt SEMI COLON  &mo 2           &kp SPACE                         &kp ENTER                   &mo 3         &td_slash         &mt LESS_THAN GREATER_THAN  &mt GRAVE SQT
             >;
 
             display-name = "Base";
