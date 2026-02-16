@@ -13,32 +13,11 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
 
-        td_k_skobki: td_k_skobki {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_K_SKOBKI";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-        };
-
-        td_f_skobki: td_f_skobki {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_F_SKOBKI";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-        };
-
         td_slash: td_slash {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SLASH";
             #binding-cells = <0>;
             bindings = <&kp NUBS>, <&kp PIPE>, <&kp FSLH>;
-        };
-
-        td_t4k_s_zpt: td_t4k_s_zpt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_T4K_S_ZPT";
-            #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp COLON>;
         };
     };
 
@@ -119,11 +98,11 @@
 
         en {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                &kp N6  &kp N7     &kp N8     &kp N9    &kp N0         &kp BSPC
-&kp ESC    &kp Q   &kp W     &kp F     &kp P      &kp G                                 &kp J   &kp L      &kp U      &kp Y     &td_t4k_s_zpt  &td_slash
-&kp TAB    &kp A   &kp R     &kp S     &kp T      &kp D                                 &kp H   &kp N      &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &td_k_skobki    &td_f_skobki  &kp K   &kp M      &kp COMMA  &kp DOT   &td_slash      &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 2   &kp SPACE       &kp ENTER     &mo 3   &kp RCTRL  &kp RALT   &kp RGUI
+&mt CAPS ESC      &kp N1  &kp N2    &kp N3    &kp N4          &kp N5                                                                &kp N6  &kp N7     &kp N8                      &kp N9         &kp N0         &kp BSPC
+&kp TAB           &kp Q   &kp W     &none     &kp K           &kp E                                                                 &kp N   &kp G      &none                       &kp Y          &kp Z          &kp H
+&kp LEFT_SHIFT    &kp F   &kp S     &kp V     &kp A           &kp P                                                                 &kp R   &kp O      &kp L                       &kp D          &kp J          &mt MINUS UNDERSCORE
+&kp LEFT_CONTROL  &kp Y   &kp X     &kp C     &kp M           &kp I   &mt LEFT_BRACKET RIGHT_BRACKET    &mt LEFT_BRACE RIGHT_BRACE  &kp T   &none      &kp B                       &kp U          &mt COMMA DOT  &kp RSHFT
+                          &kp LGUI  &kp LALT  &mt SEMI COLON  &mo 2   &kp SPACE                         &kp ENTER                   &mo 3   &td_slash  &mt LESS_THAN GREATER_THAN  &mt GRAVE SQT
             >;
 
             display-name = "Base";
@@ -132,20 +111,12 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp GRAVE  &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                               &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &kp BSPC
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
-                                    &kp LGUI              &kp LALT            &kp LCTRL           &mo 2               &kp SPACE             &kp ENTER                  &mo 4               &kp RCTRL                  &kp RALT             &kp RGUI
+&mt CAPSLOCK ESCAPE  &mt N1 EXCLAMATION       &mt N2 AT_SIGN        &mt N3 POUND        &mt N4 DOLLAR       &mt N5 PERCENT                                                                                   &mt N6 CARET        &mt N7 AMPERSAND                                 &mt N8 ASTRK                &mt N9 LEFT_PARENTHESIS  &mt N0 RIGHT_PARENTHESIS  &kp BSPC
+&kp TAB              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IE RU_CYRILLIC_IO                                                                &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA         &kp RU_CYRILLIC_SHCHA    &kp RU_CYRILLIC_ZE        &mt RU_CYRILLIC_HA RU_CYRILLIC_E
+&kp LEFT_SHIFT       &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                                               &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL          &kp RU_CYRILLIC_DE       &kp RU_CYRILLIC_ZHE       &mt MINUS UNDERSCORE
+&kp LEFT_CONTROL     &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                  &mt LEFT_BRACKET RIGHT_BRACKET    &mt LEFT_BRACE RIGHT_BRACE  &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_SOFT_SIGN RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_BE          &kp RU_CYRILLIC_YU       &mt RU_COMMA RU_DOT       &kp RSHFT
+                                              &kp LGUI              &kp LALT            &mt SEMI COLON      &mo 2                              &kp SPACE                         &kp ENTER                   &mo 4               &td_slash                                        &mt LESS_THAN GREATER_THAN  &mt GRAVE SQT
             >;
-
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
         };
 
         nav {
