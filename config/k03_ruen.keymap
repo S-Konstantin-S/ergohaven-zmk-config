@@ -98,11 +98,11 @@
 
         en {
             bindings = <
-&mt CAPS ESC      &mt N1 EXCLAMATION  &mt N2 AT_SIGN  &mt N3 POUND  &mt N4 DOLLAR   &mt N5 PERCENT                                                                &mt N6 CARET  &mt N7 AMPERSAND  &mt N8 ASTRK                &mt N9 LEFT_PARENTHESIS  &mt N0 RIGHT_PARENTHESIS  &kp BSPC
-&kp TAB           &kp Q               &kp W           &none         &kp K           &kp E                                                                         &kp N         &kp G             &none                       &none                    &kp Z                     &kp H
-&kp LEFT_SHIFT    &kp F               &kp S           &kp V         &kp A           &kp P                                                                         &kp R         &kp O             &kp L                       &kp D                    &kp J                     &mt MINUS UNDERSCORE
-&kp LEFT_CONTROL  &kp Y               &kp X           &kp C         &kp M           &kp I           &mt LEFT_BRACKET RIGHT_BRACKET    &mt LEFT_BRACE RIGHT_BRACE  &kp T         &none             &kp B                       &kp U                    &mt COMMA DOT             &kp RSHFT
-                                      &kp LGUI        &kp LALT      &mt SEMI COLON  &mo 2           &kp SPACE                         &kp ENTER                   &mo 3         &td_slash         &mt LESS_THAN GREATER_THAN  &mt GRAVE SQT
+&mt ESC CAPS      &mt EXCLAMATION N1  &mt AT_SIGN NUMBER_2  &mt RU_NUMERO NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT NUMBER_5                                                                &mt CARET N6  &mt AMPERSAND N7  &mt ASTRK N8                &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS NUMBER_0  &kp BSPC
+&kp TAB           &kp Q               &kp W                 &none                   &kp K                &kp E                                                                               &kp N         &kp G             &none                       &none                    &kp Z                           &kp H
+&kp LEFT_SHIFT    &kp F               &kp S                 &kp V                   &kp A                &kp P                                                                               &kp R         &kp O             &kp L                       &kp D                    &kp J                           &mt QUESTION MINUS
+&kp LEFT_CONTROL  &kp Y               &kp X                 &kp C                   &kp M                &kp I                 &mt RIGHT_BRACKET LEFT_BRACKET    &mt RIGHT_BRACE LEFT_BRACE  &kp T         &none             &kp B                       &kp U                    &mt COMMA DOT                   &kp RSHFT
+                                      &kp LGUI              &kp LALT                &mt COLON SEMICOLON  &mo 2                 &kp SPACE                         &kp ENTER                   &mo 3         &td_slash         &mt GREATER_THAN LESS_THAN  &mt GRAVE SQT
             >;
 
             display-name = "Base";
@@ -111,11 +111,11 @@
         ru {
             display-name = "Ru";
             bindings = <
-&mt CAPSLOCK ESCAPE  &mt N1 EXCLAMATION       &mt N2 AT_SIGN        &mt N3 POUND        &mt N4 DOLLAR       &mt N5 PERCENT                                                                                   &mt N6 CARET        &mt N7 AMPERSAND                                 &mt N8 ASTRK                &mt N9 LEFT_PARENTHESIS  &mt N0 RIGHT_PARENTHESIS  &kp BSPC
-&kp TAB              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IE RU_CYRILLIC_IO                                                                &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA         &kp RU_CYRILLIC_SHCHA    &kp RU_CYRILLIC_ZE        &mt RU_CYRILLIC_HA RU_CYRILLIC_E
-&kp LEFT_SHIFT       &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                                               &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL          &kp RU_CYRILLIC_DE       &kp RU_CYRILLIC_ZHE       &mt MINUS UNDERSCORE
-&kp LEFT_CONTROL     &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                  &mt LEFT_BRACKET RIGHT_BRACKET    &mt LEFT_BRACE RIGHT_BRACE  &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_SOFT_SIGN RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_BE          &kp RU_CYRILLIC_YU       &mt RU_COMMA RU_DOT       &kp RSHFT
-                                              &kp LGUI              &kp LALT            &mt SEMI COLON      &mo 2                              &kp SPACE                         &kp ENTER                   &mo 4               &td_slash                                        &mt LESS_THAN GREATER_THAN  &mt GRAVE SQT
+&mt ESC CAPS      &mt EXCLAMATION N1       &mt AT_SIGN NUMBER_2  &mt RU_NUMERO NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT NUMBER_5                                                                             &mt CARET N6        &mt AMPERSAND N7                                 &mt ASTRK N8                &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BSPC
+&kp TAB           &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U       &kp RU_CYRILLIC_KA   &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                                                                &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA         &kp RU_CYRILLIC_SHCHA    &kp RU_CYRILLIC_ZE        &mt RU_CYRILLIC_E RU_CYRILLIC_HA
+&kp LEFT_SHIFT    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE      &kp RU_CYRILLIC_A    &kp RU_CYRILLIC_PE                                                                               &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL          &kp RU_CYRILLIC_DE       &kp RU_CYRILLIC_ZHE       &mt QUESTION MINUS
+&kp LEFT_CONTROL  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES      &kp RU_CYRILLIC_EM   &kp RU_CYRILLIC_I                  &mt RIGHT_BRACKET LEFT_BRACKET    &mt RIGHT_BRACE LEFT_BRACE  &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_SOFT_SIGN RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_BE          &kp RU_CYRILLIC_YU       &mt RU_DOT RU_COMMA       &kp RSHFT
+                                           &kp LGUI              &kp LALT                &mt COLON SEMI       &mo 2                              &kp SPACE                         &kp ENTER                   &mo 4               &td_slash                                        &mt GREATER_THAN LESS_THAN  &mt GRAVE SQT
             >;
         };
 
