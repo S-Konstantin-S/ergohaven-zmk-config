@@ -146,11 +146,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &trans        &kp AT        &kp DLLR      &kp HASH     &trans                           &trans          &trans    &kp CARET    &trans    &trans      &trans
-&trans  &trans        &kp LT        &kp EQUAL     &kp GT       &kp GRAVE                        &trans          &kp LBKT  &kp UNDER    &kp RBKT  &trans      &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &kp LBRC  &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &kp PIPE  &kp TILDE    &kp AMPS  &kp RU_DOT  &trans
-                      &trans        &trans        &trans       &mo 5          &trans    &trans  &trans          &trans    &trans       &trans
+&trans  &trans        &lt 0 AT_SIGN  &kp DLLR      &kp HASH     &trans                           &trans          &trans    &kp CARET    &trans    &trans      &trans
+&trans  &trans        &kp LT         &kp EQUAL     &kp GT       &kp GRAVE                        &trans          &kp LBKT  &kp UNDER    &kp RBKT  &trans      &trans
+&trans  &kp RU_BSLH   &kp LPAR       &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &kp LBRC  &kp RU_SEMI  &kp RBRC  &kp EXCL    &kp RU_QUESTION
+&trans  &kp RU_COMMA  &kp RU_ASTRK   &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &kp PIPE  &kp TILDE    &kp AMPS  &kp RU_DOT  &trans
+                      &trans         &trans        &trans       &mo 5          &trans    &trans  &trans          &trans    &trans       &trans
             >;
         };
 
